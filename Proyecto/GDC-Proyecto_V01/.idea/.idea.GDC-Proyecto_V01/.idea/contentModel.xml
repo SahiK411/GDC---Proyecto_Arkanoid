@@ -23,6 +23,14 @@
         <e p="Resources" t="Include">
           <e p="_1.jpg" t="Include" />
           <e p="arkanoid_background.png" t="Include" />
+          <e p="fs_quixotry_ultrawide_.png" t="Include" />
+          <e p="fs_quixotry_ultrawide_1.png" t="Include" />
+          <e p="fs_quixotry_ultrawide_11.ico" t="Include" />
+          <e p="ggg.png" t="Include" />
+          <e p="ggg1.png" t="Include" />
+          <e p="jug.png" t="Include" />
+          <e p="Jugar_img.png" t="Include" />
+          <e p="prubea_arka.png" t="Include" />
         </e>
       </e>
       <e p="GDC-Proyecto_V01.sln" t="IncludeFlat" />

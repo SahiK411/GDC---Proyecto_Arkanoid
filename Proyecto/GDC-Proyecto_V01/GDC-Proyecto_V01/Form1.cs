@@ -18,6 +18,7 @@ namespace GDC_Proyecto_V01
             //WindowState = FormWindowState.Maximized;
             //Height = Screen.PrimaryScreen.Bounds.Height;
             //Width = Screen.PrimaryScreen.Bounds.Width;
+
             Height = 700;
             Width = 525;
         }

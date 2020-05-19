@@ -81,6 +81,14 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="Resources\arkanoid_background.png" />
+      <Content Include="Resources\fs_quixotry_ultrawide_.png" />
+      <Content Include="Resources\fs_quixotry_ultrawide_1.png" />
+      <Content Include="Resources\fs_quixotry_ultrawide_11.ico" />
+      <Content Include="Resources\ggg.png" />
+      <Content Include="Resources\ggg1.png" />
+      <Content Include="Resources\jug.png" />
+      <Content Include="Resources\Jugar_img.png" />
+      <Content Include="Resources\prubea_arka.png" />
       <Content Include="Resources\_1.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

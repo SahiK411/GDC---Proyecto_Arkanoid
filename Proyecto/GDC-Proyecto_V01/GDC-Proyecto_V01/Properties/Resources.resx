@@ -124,4 +124,28 @@
   <data name="arkanoid_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arkanoid_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="prubea_arka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prubea_arka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jugar_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jugar_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fs_quixotry_ultrawide_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fs_quixotry_ultrawide_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fs_quixotry_ultrawide_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fs_quixotry_ultrawide_11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fs_quixotry_ultrawide_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fs_quixotry_ultrawide_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ggg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ggg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ggg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ggg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
