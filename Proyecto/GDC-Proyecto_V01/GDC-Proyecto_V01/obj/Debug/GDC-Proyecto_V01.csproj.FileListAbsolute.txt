@@ -1,0 +1,10 @@
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\bin\Debug\GDC_Proyecto_V01.exe.config
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\bin\Debug\GDC_Proyecto_V01.exe
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\bin\Debug\GDC_Proyecto_V01.pdb
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC-Proyecto_V01.csprojAssemblyReference.cache
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC_Proyecto_V01.Properties.Resources.resources
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC-Proyecto_V01.csproj.GenerateResource.cache
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC-Proyecto_V01.csproj.CoreCompileInputs.cache
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC_Proyecto_V01.exe
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC_Proyecto_V01.pdb
+C:\Users\Diego\RiderProjects\GDC-Proyecto_V01\GDC-Proyecto_V01\obj\Debug\GDC_Proyecto_V01.Form1.resources
