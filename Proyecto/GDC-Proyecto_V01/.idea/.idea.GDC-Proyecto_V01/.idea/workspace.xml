@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/Connection_DataBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/TOP10Scores_Form.Designer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -24,6 +25,7 @@
         <option value="$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.cs" />
         <option value="$PROJECT_DIR$/GDC-Proyecto_V01/Form1.cs" />
         <option value="$PROJECT_DIR$/GDC-Proyecto_V01/Form1.Designer.cs" />
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/Connection_DataBase.cs" />
       </list>
     </option>
   </component>
@@ -72,6 +74,7 @@
       <workItem from="1589928527542" duration="1058000" />
       <workItem from="1589939565997" duration="5862000" />
       <workItem from="1589948013572" duration="2911000" />
+      <workItem from="1589953349598" duration="188000" />
     </task>
     <servers />
   </component>
