@@ -9,11 +9,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/TOP10Scores_Form.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/TOP10Scores_Form.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GDC-Proyecto_V01/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.Designer.cs" />
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/TOP10Scores_Form.Designer.cs" />
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/TOP10Scores_Form.cs" />
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/UserForm.cs" />
         <option value="$PROJECT_DIR$/GDC-Proyecto_V01/Form1.cs" />
+        <option value="$PROJECT_DIR$/GDC-Proyecto_V01/Form1.Designer.cs" />
       </list>
     </option>
   </component>
@@ -60,6 +70,8 @@
       <updated>1589921559218</updated>
       <workItem from="1589921562109" duration="6691000" />
       <workItem from="1589928527542" duration="1058000" />
+      <workItem from="1589939565997" duration="5862000" />
+      <workItem from="1589948013572" duration="2911000" />
     </task>
     <servers />
   </component>
@@ -69,21 +81,25 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1589929588868">
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1589950934451">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1589929588868" />
-    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1589929588868">
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1589950934451" />
+    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1589950934451">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1589929588868" />
-    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1589929588868">
+    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1589950934451" />
+    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1589950934451">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1589929588868" />
-    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1589929588868">
+    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1589950934451" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1589950934451">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1589929588868" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1589950934451" />
+    <state x="363" y="292" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1589949768248">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="363" y="292" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1280.760@0.0.1280.760" timestamp="1589949768248" />
   </component>
 </project>

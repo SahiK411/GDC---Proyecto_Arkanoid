@@ -148,4 +148,52 @@
   <data name="ggg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ggg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Usuario_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ARKA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARKA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prubea_arka1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prubea_arka1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prubea_arka_plat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prubea_arka_plat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_130840_black_and_blue_low_poly_abstract_background_design_vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_130840_black_and_blue_low_poly_abstract_background_design_vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_131206_abstract_dark_blue_polygon_background_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_131206_abstract_dark_blue_polygon_background_template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USUARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USUARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JUGAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JUGAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="puntajes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\puntajes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SALIR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SALIR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USUARIO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USUARIO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TOP_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TOP_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool_Text___C_U__357169747247516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cool_Text___C_U__357169747247516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

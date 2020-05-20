@@ -22,16 +22,36 @@
         </e>
         <e p="Resources" t="Include">
           <e p="_1.jpg" t="Include" />
+          <e p="_130840_black_and_blue_low_poly_abstract_background_design_vector.jpg" t="Include" />
+          <e p="_131206_abstract_dark_blue_polygon_background_template.jpg" t="Include" />
+          <e p="ARKA.png" t="Include" />
           <e p="arkanoid_background.png" t="Include" />
+          <e p="back.png" t="Include" />
+          <e p="Cool_Text___C_U__357169747247516.png" t="Include" />
           <e p="fs_quixotry_ultrawide_.png" t="Include" />
           <e p="fs_quixotry_ultrawide_1.png" t="Include" />
           <e p="fs_quixotry_ultrawide_11.ico" t="Include" />
           <e p="ggg.png" t="Include" />
           <e p="ggg1.png" t="Include" />
+          <e p="imagen.jpg" t="Include" />
           <e p="jug.png" t="Include" />
           <e p="Jugar_img.png" t="Include" />
           <e p="prubea_arka.png" t="Include" />
+          <e p="prubea_arka1.png" t="Include" />
+          <e p="prubea_arka_plat.png" t="Include" />
+          <e p="puntajes.png" t="Include" />
+          <e p="SALIR.png" t="Include" />
+          <e p="USUARIO.png" t="Include" />
+          <e p="USUARIO1.png" t="Include" />
+          <e p="Usuario_img.png" t="Include" />
+          <e p="wall.png" t="Include" />
         </e>
+        <e p="TOP10Scores_Form.cs" t="Include" />
+        <e p="TOP10Scores_Form.Designer.cs" t="Include" />
+        <e p="TOP10Scores_Form.resx" t="Include" />
+        <e p="UserForm.cs" t="Include" />
+        <e p="UserForm.Designer.cs" t="Include" />
+        <e p="UserForm.resx" t="Include" />
       </e>
       <e p="GDC-Proyecto_V01.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

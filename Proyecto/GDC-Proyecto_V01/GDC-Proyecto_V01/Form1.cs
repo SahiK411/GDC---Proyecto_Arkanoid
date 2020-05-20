@@ -15,12 +15,30 @@ namespace GDC_Proyecto_V01
         public Form1()
         {
             InitializeComponent();
-            //WindowState = FormWindowState.Maximized;
-            //Height = Screen.PrimaryScreen.Bounds.Height;
-            //Width = Screen.PrimaryScreen.Bounds.Width;
+            WindowState = FormWindowState.Maximized;
+            Height = Screen.PrimaryScreen.Bounds.Height;
+            Width = Screen.PrimaryScreen.Bounds.Width;
+        }
+        
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (UserForm form2 = new UserForm())       
+                form2.ShowDialog();
+            Show();
+        }
+        
+        private void btnScores_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (TOP10Scores_Form form2 = new TOP10Scores_Form())       
+                form2.ShowDialog();
+            Show();
+        }
 
-            Height = 700;
-            Width = 525;
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

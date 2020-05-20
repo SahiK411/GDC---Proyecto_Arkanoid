@@ -29,80 +29,82 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnScores = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::GDC_Proyecto_V01.Properties.Resources.prubea_arka;
-            this.pictureBox1.Location = new System.Drawing.Point(-71, 81);
+            this.pictureBox1.Image = global::GDC_Proyecto_V01.Properties.Resources.prubea_arka1;
+            this.pictureBox1.Location = new System.Drawing.Point(192, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1257, 353);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(1095, 294);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnPlay
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.fs_quixotry_ultrawide_1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(334, 608);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(427, 175);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlay.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.JUGAR;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPlay.Location = new System.Drawing.Point(517, 417);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(423, 122);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // button2
+            // btnScores
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.fs_quixotry_ultrawide_;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(334, 825);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(450, 212);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnScores.BackColor = System.Drawing.Color.Transparent;
+            this.btnScores.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.puntajes;
+            this.btnScores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnScores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnScores.Location = new System.Drawing.Point(484, 611);
+            this.btnScores.Name = "btnScores";
+            this.btnScores.Size = new System.Drawing.Size(489, 133);
+            this.btnScores.TabIndex = 2;
+            this.btnScores.UseVisualStyleBackColor = false;
+            this.btnScores.Click += new System.EventHandler(this.btnScores_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.ggg1;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(334, 1081);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(427, 153);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.SALIR;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Location = new System.Drawing.Point(540, 813);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(384, 120);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources.arkanoid_background;
+            this.BackgroundImage = global::GDC_Proyecto_V01.Properties.Resources
+                ._131206_abstract_dark_blue_polygon_background_template;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1154, 1277);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1524, 1015);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnScores);
+            this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ARKANOID";
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -111,8 +113,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnScores;
+        private System.Windows.Forms.Button btnPlay;
     }
 }

@@ -54,6 +54,18 @@
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="TOP10Scores_Form.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="TOP10Scores_Form.Designer.cs">
+          <DependentUpon>TOP10Scores_Form.cs</DependentUpon>
+        </Compile>
+        <Compile Include="UserForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="UserForm.Designer.cs">
+          <DependentUpon>UserForm.cs</DependentUpon>
+        </Compile>
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>
@@ -66,6 +78,12 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="TOP10Scores_Form.resx">
+          <DependentUpon>TOP10Scores_Form.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="UserForm.resx">
+          <DependentUpon>UserForm.cs</DependentUpon>
+        </EmbeddedResource>
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>
             <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,16 +98,30 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include="Resources\ARKA.png" />
       <Content Include="Resources\arkanoid_background.png" />
+      <Content Include="Resources\back.png" />
+      <Content Include="Resources\Cool_Text___C_U__357169747247516.png" />
       <Content Include="Resources\fs_quixotry_ultrawide_.png" />
       <Content Include="Resources\fs_quixotry_ultrawide_1.png" />
       <Content Include="Resources\fs_quixotry_ultrawide_11.ico" />
       <Content Include="Resources\ggg.png" />
       <Content Include="Resources\ggg1.png" />
+      <Content Include="Resources\imagen.jpg" />
       <Content Include="Resources\jug.png" />
       <Content Include="Resources\Jugar_img.png" />
       <Content Include="Resources\prubea_arka.png" />
+      <Content Include="Resources\prubea_arka1.png" />
+      <Content Include="Resources\prubea_arka_plat.png" />
+      <Content Include="Resources\puntajes.png" />
+      <Content Include="Resources\SALIR.png" />
+      <Content Include="Resources\USUARIO.png" />
+      <Content Include="Resources\USUARIO1.png" />
+      <Content Include="Resources\Usuario_img.png" />
+      <Content Include="Resources\wall.png" />
       <Content Include="Resources\_1.jpg" />
+      <Content Include="Resources\_130840_black_and_blue_low_poly_abstract_background_design_vector.jpg" />
+      <Content Include="Resources\_131206_abstract_dark_blue_polygon_background_template.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
