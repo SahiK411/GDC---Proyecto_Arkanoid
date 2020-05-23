@@ -22,18 +22,16 @@ namespace GDC_Proyecto
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            Hide();
-            using (UserForm form2 = new UserForm())       
-                form2.ShowDialog();
-            Show();
+            UserForm ventana = new UserForm();
+            ventana.Show();
+            this.Hide();
         }
 
         private void btnScores_Click(object sender, EventArgs e)
         {
-            Hide();
-            using (Top10Scores_Form form2 = new Top10Scores_Form())       
-                form2.ShowDialog();
-            Show();
+            Top10Scores_Form ventana = new Top10Scores_Form();
+            ventana.Show();
+            this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

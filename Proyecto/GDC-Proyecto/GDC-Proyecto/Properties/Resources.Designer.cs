@@ -103,6 +103,16 @@ namespace GDC_Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cool_Text___ok__357199456372480 {
+            get {
+                object obj = ResourceManager.GetObject("Cool_Text___ok__357199456372480", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cool_Text___puntajes__357200992901054 {
             get {
                 object obj = ResourceManager.GetObject("Cool_Text___puntajes__357200992901054", resourceCulture);

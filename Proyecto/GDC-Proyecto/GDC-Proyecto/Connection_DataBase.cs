@@ -5,10 +5,10 @@ namespace GDC_Proyecto
 {
     public static class ConnectionDB
     {
-        private static string host = "",
-            database = "",
-            userId = "",
-            password = "";
+        private static string host = "ec2-18-209-187-54.compute-1.amazonaws.com",
+            database = "dartithgc6pdad",
+            userId = "elquyvcumthlll",
+            password = "d1987de60e45c8f18ab6638266ff62cf6361d7bd0829b1868bdeea5674b2688a";
 
         private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};" +
