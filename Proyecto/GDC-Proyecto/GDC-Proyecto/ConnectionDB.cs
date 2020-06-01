@@ -3,27 +3,26 @@ using Npgsql;
 
 namespace GDC_Proyecto
 {
-    public static class ConnectionDB
+    class ConnectionDB
     {
-        private static string host = "ec2-18-209-187-54.compute-1.amazonaws.com",
-            database = "dartithgc6pdad",
-            userId = "elquyvcumthlll",
-            password = "d1987de60e45c8f18ab6638266ff62cf6361d7bd0829b1868bdeea5674b2688a";
+        private static string host = "127.0.0.1",
+            database = "GDC-Proyecto",
+            userId = "postgres",
+            password = "uca";
 
         private static string sConnection =
-            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};" +
-            "sslmode=Require;Trust Server Certificate=true";
+            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
 
         public static DataTable ExecuteQuery(string query)
         {
             NpgsqlConnection connection = new NpgsqlConnection(sConnection);
             DataSet ds = new DataSet();
-            
+
             connection.Open();
-            
+
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, connection);
             da.Fill(ds);
-            
+
             connection.Close();
 
             return ds.Tables[0];
@@ -32,12 +31,12 @@ namespace GDC_Proyecto
         public static void ExecuteNonQuery(string act)
         {
             NpgsqlConnection connection = new NpgsqlConnection(sConnection);
-            
+
             connection.Open();
-            
+
             NpgsqlCommand command = new NpgsqlCommand(act, connection);
             command.ExecuteNonQuery();
-            
+
             connection.Close();
         }
     }

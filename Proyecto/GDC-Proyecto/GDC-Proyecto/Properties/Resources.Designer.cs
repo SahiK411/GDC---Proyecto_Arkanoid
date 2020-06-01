@@ -19,7 +19,7 @@ namespace GDC_Proyecto.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -65,7 +65,7 @@ namespace GDC_Proyecto.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _131206_abstract_dark_blue_polygon_background_template {
             get {
-                object obj = ResourceManager.GetObject("_131206_abstract_dark_blue_polygon_background_template", resourceCulture);
+                object obj = ResourceManager.GetObject("131206-abstract-dark-blue-polygon-background-template", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace GDC_Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cool_Text___back__357197261215738 {
+        internal static System.Drawing.Bitmap arkanoid {
             get {
-                object obj = ResourceManager.GetObject("Cool_Text___back__357197261215738", resourceCulture);
+                object obj = ResourceManager.GetObject("arkanoid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace GDC_Proyecto.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Cool_Text___C_U__357169747247516 {
             get {
-                object obj = ResourceManager.GetObject("Cool_Text___C_U__357169747247516", resourceCulture);
+                object obj = ResourceManager.GetObject("Cool Text - C U -357169747247516", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,19 +93,9 @@ namespace GDC_Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cool_Text___C_U__3571697472475161 {
+        internal static System.Drawing.Bitmap Cool_Text___ok__357203429598169 {
             get {
-                object obj = ResourceManager.GetObject("Cool_Text___C_U__3571697472475161", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cool_Text___ok__357199456372480 {
-            get {
-                object obj = ResourceManager.GetObject("Cool_Text___ok__357199456372480", resourceCulture);
+                object obj = ResourceManager.GetObject("Cool Text - ok -357203429598169", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,17 +105,7 @@ namespace GDC_Proyecto.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Cool_Text___puntajes__357200992901054 {
             get {
-                object obj = ResourceManager.GetObject("Cool_Text___puntajes__357200992901054", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cool_Text___top_io__357200923261498 {
-            get {
-                object obj = ResourceManager.GetObject("Cool_Text___top_io__357200923261498", resourceCulture);
+                object obj = ResourceManager.GetObject("Cool Text - puntajes -357200992901054", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +115,7 @@ namespace GDC_Proyecto.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Cool_Text___usuario__357200963519173 {
             get {
-                object obj = ResourceManager.GetObject("Cool_Text___usuario__357200963519173", resourceCulture);
+                object obj = ResourceManager.GetObject("Cool Text - usuario -357200963519173", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +146,26 @@ namespace GDC_Proyecto.Properties {
         internal static System.Drawing.Bitmap SALIR {
             get {
                 object obj = ResourceManager.GetObject("SALIR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TOP_10 {
+            get {
+                object obj = ResourceManager.GetObject("TOP 10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USUARIO {
+            get {
+                object obj = ResourceManager.GetObject("USUARIO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

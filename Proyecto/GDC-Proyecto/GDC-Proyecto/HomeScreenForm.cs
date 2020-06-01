@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GDC_Proyecto
 {
-    public partial class Form1 : Form
+    public partial class HomeScreenForm : Form
     {
-        public Form1()
+        public HomeScreenForm()
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
@@ -20,23 +20,27 @@ namespace GDC_Proyecto
             Width = Screen.PrimaryScreen.Bounds.Width;
         }
 
-        private void btnPlay_Click(object sender, EventArgs e)
+        private void btnPlay_Click_1(object sender, EventArgs e)
         {
-            UserForm ventana = new UserForm();
-            ventana.Show();
+            UserForm window = new UserForm();
+            window.Show();
             this.Hide();
         }
 
         private void btnScores_Click(object sender, EventArgs e)
         {
-            Top10Scores_Form ventana = new Top10Scores_Form();
-            ventana.Show();
+            Top10ScoresForm window = new Top10ScoresForm();
+            window.Show();
             this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Seguro que desea salir del juego?",
+                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -118,37 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_131206_abstract_dark_blue_polygon_background_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\_131206_abstract_dark_blue_polygon_background_template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="131206-abstract-dark-blue-polygon-background-template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\131206-abstract-dark-blue-polygon-background-template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="prubea_arka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prubea_arka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cool Text - ok -357203429598169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cool Text - ok -357203429598169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool Text - puntajes -357200992901054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cool Text - puntajes -357200992901054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arkanoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arkanoid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JUGAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JUGAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cool_Text___puntajes__357200992901054" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___puntajes__357200992901054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="prubea_arka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prubea_arka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool Text - C U -357169747247516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cool Text - C U -357169747247516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool Text - usuario -357200963519173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cool Text - usuario -357200963519173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SALIR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SALIR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cool_Text___C_U__357169747247516" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___C_U__357169747247516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="USUARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USUARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cool_Text___usuario__357200963519173" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___usuario__357200963519173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cool_Text___back__357197261215738" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___back__357197261215738.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cool_Text___C_U__3571697472475161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___C_U__3571697472475161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cool_Text___top_io__357200923261498" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___top_io__357200923261498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cool_Text___ok__357199456372480" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cool_Text___ok__357199456372480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TOP 10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TOP 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
