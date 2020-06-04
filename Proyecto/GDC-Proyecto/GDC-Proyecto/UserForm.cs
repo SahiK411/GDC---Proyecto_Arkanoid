@@ -29,11 +29,15 @@ namespace GDC_Proyecto
                     PlayerDAO.VerifyPlayer(txtNickname.Text);
 
                     txtNickname.Clear();
+
+                    GameForm window = new GameForm();
+                    window.Show();
+                    this.Hide();
                 }
                 else
                     throw new InvalidLengthException("No se pueden dejar espacios en blanco");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Ha ocurrido un error...",
                     "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
