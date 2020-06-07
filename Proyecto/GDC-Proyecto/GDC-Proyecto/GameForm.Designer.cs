@@ -36,11 +36,9 @@
             // SpaceCraft
             // 
             this.SpaceCraft.BackColor = System.Drawing.Color.Transparent;
-            this.SpaceCraft.Image = global::GDC_Proyecto.Properties.Resources.Capture_removebg_preview;
-            this.SpaceCraft.Location = new System.Drawing.Point(571, 883);
+            this.SpaceCraft.Location = new System.Drawing.Point(544, 658);
             this.SpaceCraft.Name = "SpaceCraft";
-            this.SpaceCraft.Size = new System.Drawing.Size(321, 202);
-            this.SpaceCraft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.SpaceCraft.Size = new System.Drawing.Size(347, 207);
             this.SpaceCraft.TabIndex = 0;
             this.SpaceCraft.TabStop = false;
             this.SpaceCraft.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SpaceCraft_MouseMove);
@@ -58,11 +56,11 @@
             this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ARKANOID";
+            this.Load += new System.EventHandler(this.GameForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameForm_KeyPress);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SpaceCraft_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.SpaceCraft)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
