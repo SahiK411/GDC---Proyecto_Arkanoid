@@ -6,12 +6,14 @@ namespace GDC_Proyecto
 {
     public partial class UC_Game : UserControl
     {
+        // Declarando los picture box
         private CustomPictureBox[,] CustomPictureBox;
         private PictureBox ball;
 
         public UC_Game()
         {
             InitializeComponent();
+
             Height = ClientSize.Height;
             Width = ClientSize.Width;
         }
@@ -39,12 +41,21 @@ namespace GDC_Proyecto
             Timer.Start();
         }
 
+        // Metodos para iniciar el juego
         private void UC_Game_KeyPress(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
                 GameData.GameStarted = true;
+
         }
 
+        private void UC_Game_OnClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+                GameData.GameStarted = true;
+        }
+
+        // Metodo para el movimiento de la nave con el mouse
         private void PictureBox_MouseMove(object sender, MouseEventArgs e)
         {
             if (!GameData.GameStarted)
@@ -62,6 +73,7 @@ namespace GDC_Proyecto
             }
         }
 
+        // Metodo que agergara los bloques
         private void LoadTiles()
         {
             int xAxis = 10;
@@ -100,11 +112,13 @@ namespace GDC_Proyecto
             }
         }
         
+        // Metodo que genera un numero random para las imagenes de los bloques
         private int GenerateRandomNumber()
         {
             return new Random().Next(2, 10);
         }
 
+        // Metodo que toma el tiempo
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (!GameData.GameStarted)
@@ -116,6 +130,7 @@ namespace GDC_Proyecto
             ReboundBall();
         }
 
+        // Metodo que se encarga para los rebotes de la pelota
         private void ReboundBall()
         {
             if (ball.Bottom > Height)

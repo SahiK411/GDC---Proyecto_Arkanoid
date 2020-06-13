@@ -27,7 +27,7 @@ namespace GDC_Proyecto
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Seguro que desea salir del juego?",
-                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }

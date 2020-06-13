@@ -67,6 +67,7 @@ namespace GDC_Proyecto
             Menu.OnClickButton_ViewScores += OnCLickToUserControl_Top10;
             Top10.OnClickButton_Back += OnCLickToUserControl_Menu;
             Player.OnClickButton_Ok += OnCLickToUserControl_Game;
+            Player.OnClickButton_Back += OnCLickToUserControl_Menu;
         }
 
         // Muestra el User Control del Juego
@@ -109,7 +110,7 @@ namespace GDC_Proyecto
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("¿Seguro que desea salir del juego?",
-                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }

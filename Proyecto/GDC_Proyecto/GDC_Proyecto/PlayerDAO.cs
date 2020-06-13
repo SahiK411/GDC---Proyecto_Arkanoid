@@ -41,8 +41,6 @@ namespace GDC_Proyecto
 
         public static void VerifyPlayer(string nickname)
         {
-            bool flag = true;
-
             string queryUser = $"SELECT count(*) FROM players WHERE nickname = '{nickname}'";
 
             var dt = Connection_DataBase.ExecuteQuery(queryUser);
@@ -58,6 +56,9 @@ namespace GDC_Proyecto
                     {
                         AddPlayer(nickname);
                     }
+                    else
+                        MessageBox.Show("No se guardara un registro de la partida a realizar.", "ARKANOID", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (Exception)
                 {

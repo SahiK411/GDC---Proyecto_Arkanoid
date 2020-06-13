@@ -8,6 +8,7 @@ namespace GDC_Proyecto
         // Declaracion de delegate
         public delegate void EventUserControl_Player(object sender, EventArgs e);
         public EventUserControl_Player OnClickButton_Ok;
+        public EventUserControl_Player OnClickButton_Back;
 
         public UC_Player()
         {
@@ -39,6 +40,11 @@ namespace GDC_Proyecto
                 MessageBox.Show("Ha ocurrido un error...",
                     "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            OnClickButton_Back?.Invoke(this, e);
         }
     }
 }

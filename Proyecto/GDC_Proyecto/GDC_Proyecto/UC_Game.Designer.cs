@@ -36,6 +36,7 @@
             // 
             // PictureBox
             // 
+            this.PictureBox.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox.Location = new System.Drawing.Point(434, 868);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Size = new System.Drawing.Size(254, 75);
@@ -52,11 +53,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GDC_Proyecto.Properties.Resources._131206_abstract_dark_blue_polygon_background_template;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.PictureBox);
             this.Name = "UC_Game";
             this.Size = new System.Drawing.Size(1172, 1011);
             this.Load += new System.EventHandler(this.UC_Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UC_Game_KeyPress);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UC_Game_OnClick);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
