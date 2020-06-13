@@ -80,8 +80,8 @@ namespace GDC_Proyecto
             int xAxis = 10;
             int yAxis = 5;
 
-            int pbHeight = (int)(Height) / yAxis;
-            int pbWidth = (Width) / xAxis;
+            int pbHeight = (int)(Height * 0.2) * yAxis;
+            int pbWidth = (Width - xAxis) / xAxis;
 
             CustomPictureBox = new CustomPictureBox[yAxis, xAxis];
 
@@ -116,7 +116,7 @@ namespace GDC_Proyecto
         // Metodo que genera un numero random para las imagenes de los bloques
         private int GenerateRandomNumber()
         {
-            return new Random().Next(1, 9);
+            return new Random().Next(2, 10);
         }
 
         // Metodo que toma el tiempo
