@@ -16,7 +16,7 @@ namespace GDC_Proyecto
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            OnClickButton_Play?.Invoke(this, e);
+            OnClickButton_Play(this, e);
         }
 
         private void btnScores_Click(object sender, EventArgs e)

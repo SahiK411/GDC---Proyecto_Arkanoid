@@ -20,7 +20,7 @@ namespace GDC_Proyecto
 
         private void UC_Game_Load(object sender, EventArgs e)
         {
-            // Cinfigurando los atributos para picBox de la nave
+            // Configurando los atributos para picBox de la nave
             PictureBox.BackgroundImage = Image.FromFile("../../Img/spacecraft.png");
             PictureBox.BackgroundImageLayout = ImageLayout.Stretch;
 
@@ -28,7 +28,8 @@ namespace GDC_Proyecto
 
             // Configurando los atributos para la picBox de la pelota
             ball = new PictureBox();
-            ball.Width = ball.Height = 20;
+            ball.Width  = 20;
+            ball.Height = 20;
             ball.BackgroundImage = Image.FromFile("../../Img/ball.png");
             ball.BackgroundImageLayout = ImageLayout.Stretch;
 
@@ -79,8 +80,8 @@ namespace GDC_Proyecto
             int xAxis = 10;
             int yAxis = 5;
 
-            int pbHeight = (int)(Height * 0.2) / yAxis;
-            int pbWidth = (Width - xAxis) / xAxis;
+            int pbHeight = (int)(Height) / yAxis;
+            int pbWidth = (Width) / xAxis;
 
             CustomPictureBox = new CustomPictureBox[yAxis, xAxis];
 
@@ -115,7 +116,7 @@ namespace GDC_Proyecto
         // Metodo que genera un numero random para las imagenes de los bloques
         private int GenerateRandomNumber()
         {
-            return new Random().Next(2, 10);
+            return new Random().Next(1, 9);
         }
 
         // Metodo que toma el tiempo

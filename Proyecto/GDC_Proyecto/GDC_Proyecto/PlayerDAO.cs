@@ -17,8 +17,8 @@ namespace GDC_Proyecto
             foreach (DataRow row in dt.Rows)
             {
                 Player player = new Player();
-                player.player_id = Convert.ToInt32(row[0].ToString());
-                player.nickname = row[1].ToString();
+                player.Player_id = Convert.ToInt32(row[0].ToString());
+                player.Nickname = row[1].ToString();
 
                 PlayersList.Add(player);
             }

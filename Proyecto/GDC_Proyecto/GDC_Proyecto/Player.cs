@@ -2,9 +2,12 @@
 {
     class Player
     {
-        public int player_id { get; set; }
+        private int player_id;
+        private string nickname;
 
-        public string nickname { get; set; }
+        public int Player_id { get => player_id; set => player_id = value; }
+
+        public string Nickname { get => nickname; set => nickname = value; }
 
         public Player()
         {
@@ -12,8 +15,8 @@
 
         public Player(int player_id, string nickname)
         {
-            this.player_id = player_id;
-            this.nickname = nickname;
+            this.Player_id = player_id;
+            this.Nickname = nickname;
         }
     }
 }
