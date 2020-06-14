@@ -1,6 +1,6 @@
 ﻿namespace GDC_Proyecto
 {
-    class Player
+    public class Player
     {
         private int player_id;
         private string nickname;

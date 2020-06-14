@@ -18,8 +18,7 @@ namespace GDC_Proyecto
         private void btnOk_Click(object sender, EventArgs e)
         {
             RegisterPlayer();
-
-            OnClickButton_Ok?.Invoke(this, e);
+            OnClickButton_Ok(this, e);
         }
 
         private void RegisterPlayer()
@@ -29,16 +28,22 @@ namespace GDC_Proyecto
                 if (txtNickname.Text.Length >= 1)
                 {
                     PlayerDAO.VerifyPlayer(txtNickname.Text);
-
                     txtNickname.Clear();
                 }
                 else
                     throw new InvalidLengthException("No se pueden dejar espacios en blanco");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("Ha ocurrido un error...",
-                    "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(e is InvalidLengthException)
+                {
+                    MessageBox.Show(e.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error...",
+                        "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

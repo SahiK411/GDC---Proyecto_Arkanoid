@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace GDC_Proyecto
 {
-    class PlayerDAO
+     public class PlayerDAO
     {
         public static List<Player> GetList()
         {
@@ -27,8 +27,7 @@ namespace GDC_Proyecto
 
         private static void AddPlayer(string nickname)
         {
-            string NonQuery = String.Format(
-                $"INSERT INTO players(nickname) VALUES('{nickname}');");
+            string NonQuery = $"INSERT INTO players(nickname) VALUES('{nickname}');";
 
             Connection_DataBase.ExecuteNonQuery(NonQuery);
 

@@ -7,42 +7,44 @@ namespace GDC_Proyecto
     public partial class MainForm : Form
     {
         // Declaracion de User controls
-        /*private UC_Menu Menu;
+        private UC_Menu Menu;
         private UC_Game Game;
         private UC_Top10Scores Top10;
-        private UC_Player Player;*/
-        private UserControl Current;
+        private UC_Player Player;
+        //private UserControl Current;
 
         public MainForm()
         {
             InitializeComponent();
 
             // Inicializando los User Controls
-            /*Menu = new UC_Menu();
+            Menu = new UC_Menu();
             Game = new UC_Game();
             Top10 = new UC_Top10Scores();
-            Player = new UC_Player();*/
+            Player = new UC_Player();
 
             // Definiendo el tamano del Form
             WindowState = FormWindowState.Maximized;
             Height = Screen.PrimaryScreen.Bounds.Height;
             Width = Screen.PrimaryScreen.Bounds.Width;
 
-            Current = new UC_Menu();
+            /*Current = new UC_Menu();
             Current.Dock = DockStyle.Fill;
             Current.Width = Width;
             Current.Height = Height;
             (Current as UC_Menu).OnClickButton_Play = OnCLickToUserControl_Player;
             (Current as UC_Menu).OnClickButton_ViewScores = OnCLickToUserControl_Top10;
-            tableLayoutPanel1.Controls.Add(Current, 0, 0);
+            tableLayoutPanel1.Controls.Add(Current, 0, 0);*/
+
+            // Definiendo el tamano del User Control del Menu
+            Menu.Dock = DockStyle.Fill;
+            Menu.Width = Width;
+            Menu.Height = Height;
+            tableLayoutPanel1.Controls.Add(Menu, 0, 0);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            /*// Definiendo el tamano del User Control del Menu
-            Menu.Dock = DockStyle.Fill;
-            Menu.Width = Width;
-            Menu.Height = Height;
 
             // Definiendo el tamano del User Control del Juego
             Game.Dock = DockStyle.Fill;
@@ -57,91 +59,89 @@ namespace GDC_Proyecto
             // Definiendo el tamano del User Control del Jugador
             Player.Dock = DockStyle.Fill;
             Player.Width = Width;
-            Player.Height = Height;*/
+            Player.Height = Height;
 
             // Anadiendo Controles de User Controls
-            /*Controls.Add(Game);
+            tableLayoutPanel1.Controls.Add(Game, 0, 0);
             Game.Hide();
 
-            Controls.Add(Top10);
+            tableLayoutPanel1.Controls.Add(Top10, 0, 0);
             Top10.Hide();
 
-            Controls.Add(Player);
+            tableLayoutPanel1.Controls.Add(Player, 0, 0);
             Player.Hide();
 
-            Controls.Add(Menu);*/
-
             // Anadiendo funcionalidades de los botones
-            /*Menu.OnClickButton_Play = OnCLickToUserControl_Player;
+            Menu.OnClickButton_Play = OnCLickToUserControl_Player;
             Menu.OnClickButton_ViewScores = OnCLickToUserControl_Top10;
             Top10.OnClickButton_Back = OnCLickToUserControl_Menu;
             Player.OnClickButton_Ok = OnCLickToUserControl_Game;
-            Player.OnClickButton_Back = OnCLickToUserControl_Menu;*/
+            Player.OnClickButton_Back = OnCLickToUserControl_Menu;
         }
 
         // Muestra el User Control del Juego
         private void OnCLickToUserControl_Game(object sender, EventArgs e)
         {
-            /*Menu.Hide();
+            Menu.Hide();
             Top10.Hide();
             Player.Hide();
-            Game.Show();*/
-            tableLayoutPanel1.Controls.Remove(Current);
+            Game.Show();
+            /*tableLayoutPanel1.Controls.Remove(Current);
             Current = new UC_Game();
             Current.Dock = DockStyle.Fill;
             Current.Width = Width;
             Current.Height = Height;
-            tableLayoutPanel1.Controls.Add(Current,0,0);
+            tableLayoutPanel1.Controls.Add(Current,0,0);*/
         }
 
         // Muestra el User Control para ver los 10 mejores puntajes
         private void OnCLickToUserControl_Top10(object sender, EventArgs e)
         {
-            /*Menu.Hide();
+            Menu.Hide();
             Game.Hide();
             Player.Hide();
-            Top10.Show();*/
-            tableLayoutPanel1.Controls.Remove(Current);
+            Top10.Show();
+            /*tableLayoutPanel1.Controls.Remove(Current);
             Current = new UC_Top10Scores();
             Current.Dock = DockStyle.Fill;
             Current.Width = Width;
             Current.Height = Height;
             (Current as UC_Top10Scores).OnClickButton_Back = OnCLickToUserControl_Menu;
-            tableLayoutPanel1.Controls.Add(Current, 0, 0);
+            tableLayoutPanel1.Controls.Add(Current, 0, 0);*/
         }
 
         // Muestra el User Control cuando se este registrando un jugador
         private void OnCLickToUserControl_Player(object sender, EventArgs e)
         {
-            /*Menu.Hide();
+            Menu.Hide();
             Top10.Hide();
             Game.Hide();
-            Player.Show();*/
-            tableLayoutPanel1.Controls.Remove(Current);
+            Player.Show();
+            /*tableLayoutPanel1.Controls.Remove(Current);
             Current = new UC_Player();
             Current.Dock = DockStyle.Fill;
             Current.Width = Width;
             Current.Height = Height;
             (Current as UC_Player).OnClickButton_Ok = OnCLickToUserControl_Game;
             (Current as UC_Player).OnClickButton_Back = OnCLickToUserControl_Menu;
-            tableLayoutPanel1.Controls.Add(Current, 0, 0);
+            tableLayoutPanel1.Controls.Add(Current, 0, 0);*/
         }
 
         // Muestra el User Control cuando se desea mostrar el menu principal
         private void OnCLickToUserControl_Menu(object sender, EventArgs e)
         {
-            /*Top10.Hide();
+            Top10.Hide();
             Game.Hide();
             Player.Hide();
-            Menu.Show();*/
-            tableLayoutPanel1.Controls.Remove(Current);
+            Menu.Show();
+            /*tableLayoutPanel1.Controls.Remove(Current);
             Current = new UC_Menu();
             Current.Dock = DockStyle.Fill;
             Current.Width = Width;
             Current.Height = Height;
             (Current as UC_Menu).OnClickButton_Play = OnCLickToUserControl_Player;
             (Current as UC_Menu).OnClickButton_ViewScores = OnCLickToUserControl_Top10;
-            tableLayoutPanel1.Controls.Add(Current, 0, 0);
+            tableLayoutPanel1.Controls.Add(Current, 0, 0);*/
         }
 
         // Evento que pregunta al Usuario si desea salir de la aplicacion
@@ -154,9 +154,6 @@ namespace GDC_Proyecto
             }
         }*/
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e){}
     }
 }

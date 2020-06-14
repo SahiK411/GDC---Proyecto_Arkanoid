@@ -5,13 +5,14 @@ namespace GDC_Proyecto
 {
     class Connection_DataBase
     {
-        private static string host = "127.0.0.1",
-            database = "GDC-Proyecto",
-            userId = "postgres",
-            password = "uca";
+        private static string host = "ec2-18-209-187-54.compute-1.amazonaws.com",
+            database = "dartithgc6pdad",
+            userId = "elquyvcumthlll",
+            password = "d1987de60e45c8f18ab6638266ff62cf6361d7bd0829b1868bdeea5674b2688a";
 
         private static string sConnection =
-            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
+            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};" +
+            "sslmode=Require;Trust Server Certificate=true";
 
         public static DataTable ExecuteQuery(string query)
         {

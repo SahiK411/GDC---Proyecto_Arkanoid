@@ -21,7 +21,7 @@ namespace GDC_Proyecto
 
         private void btnScores_Click(object sender, EventArgs e)
         {
-            OnClickButton_ViewScores?.Invoke(this, e);
+            OnClickButton_ViewScores(this, e);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
