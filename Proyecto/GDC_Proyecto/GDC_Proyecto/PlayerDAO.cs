@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
@@ -31,10 +31,10 @@ namespace GDC_Proyecto
 
             Connection_DataBase.ExecuteNonQuery(NonQuery);
 
-            MessageBox.Show("Â¡Jugador registrado exitosamente!",
+            MessageBox.Show("¡Jugador registrado exitosamente!",
                             "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show("Â¡Siga adelante!",
+            MessageBox.Show("¡Siga adelante!",
                     "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -50,7 +50,7 @@ namespace GDC_Proyecto
             {
                 try
                 {
-                    if (MessageBox.Show("Parece que este usuario no esta registrado.\nÂ¿Desea registar un nuevo usuario?",
+                    if (MessageBox.Show("Parece que este usuario no esta registrado.\n¿Desea registar un nuevo usuario?",
                         "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         AddPlayer(nickname);
@@ -61,7 +61,7 @@ namespace GDC_Proyecto
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Algo ha ocurrido mal...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Algo ha ocurrido mal...", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
