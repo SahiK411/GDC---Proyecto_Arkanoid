@@ -38,7 +38,7 @@
             // 
             this.PictureBox.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox.Location = new System.Drawing.Point(289, 556);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Size = new System.Drawing.Size(169, 48);
             this.PictureBox.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // Timer
             // 
-            this.Timer.Interval = 50;
+            this.Timer.Interval = 10;
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // UC_Game
@@ -57,7 +57,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.PictureBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Game";
             this.Size = new System.Drawing.Size(781, 647);
             this.Load += new System.EventHandler(this.UC_Game_Load);

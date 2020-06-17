@@ -58,7 +58,6 @@ D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\bin\Debug\S
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\bin\Debug\System.Text.Json.xml
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\bin\Debug\System.ValueTuple.xml
-D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.csprojAssemblyReference.cache
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.MainForm.resources
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.Properties.Resources.resources
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Game.resources
@@ -69,3 +68,4 @@ D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\G
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CopyComplete
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.exe
 D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.pdb
+D:\Programming\Chapter 3\Proyecto\Proyecto\GDC_Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.csprojAssemblyReference.cache

@@ -11,6 +11,7 @@ namespace GDC_Proyecto
         private UC_Game Game;
         private UC_Top10Scores Top10;
         private UC_Player Player;
+
         //private UserControl Current;
 
         public MainForm()
@@ -41,6 +42,11 @@ namespace GDC_Proyecto
             Menu.Width = Width;
             Menu.Height = Height;
             tableLayoutPanel1.Controls.Add(Menu, 0, 0);
+        }
+
+        private void MainForm_BackgroundImageChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -77,6 +83,7 @@ namespace GDC_Proyecto
             Top10.OnClickButton_Back = OnCLickToUserControl_Menu;
             Player.OnClickButton_Ok = OnCLickToUserControl_Game;
             Player.OnClickButton_Back = OnCLickToUserControl_Menu;
+            Game.onLose = OnCLickToUserControl_Menu;
         }
 
         // Muestra el User Control del Juego
@@ -128,7 +135,7 @@ namespace GDC_Proyecto
         }
 
         // Muestra el User Control cuando se desea mostrar el menu principal
-        private void OnCLickToUserControl_Menu(object sender, EventArgs e)
+        private void OnCLickToUserControl_Menu(object sender = null, EventArgs e = null)
         {
             Top10.Hide();
             Game.Hide();

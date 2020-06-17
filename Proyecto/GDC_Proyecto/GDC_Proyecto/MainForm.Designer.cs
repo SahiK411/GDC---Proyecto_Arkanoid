@@ -34,7 +34,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackgroundImage = global::GDC_Proyecto.Properties.Resources._131206_abstract_dark_blue_polygon_background_template;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -53,6 +53,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(873, 630);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -60,7 +62,6 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "ARKANOID";
-            /*this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);*/
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 

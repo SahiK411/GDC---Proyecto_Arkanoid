@@ -8,7 +8,11 @@ namespace GDC_Proyecto
     {
         // Declarando los picture box
         private CustomPictureBox[,] CustomPictureBox;
+        private Panel Scores;
+        private Label Score;
         private PictureBox ball;
+        public delegate void OnLose(object sender = null, EventArgs e = null);
+        public OnLose onLose;
 
         public UC_Game()
         {
@@ -24,7 +28,7 @@ namespace GDC_Proyecto
             PictureBox.BackgroundImage = Image.FromFile("../../Img/spacecraft.png");
             PictureBox.BackgroundImageLayout = ImageLayout.Stretch;
 
-            PictureBox.Top = (Height = PictureBox.Height) + 500;
+            PictureBox.Top = (Height - PictureBox.Height) - 100;
 
             // Configurando los atributos para la picBox de la pelota
             ball = new PictureBox();
@@ -38,6 +42,7 @@ namespace GDC_Proyecto
 
             Controls.Add(ball);
 
+            ScorePanel();
             LoadTiles();
             Timer.Start();
         }
@@ -80,7 +85,7 @@ namespace GDC_Proyecto
             int xAxis = 10;
             int yAxis = 5;
 
-            int pbHeight = (int)(Height * 0.2) * yAxis;
+            int pbHeight = (int)(Height * 0.2) / yAxis;
             int pbWidth = (Width - xAxis) / xAxis;
 
             CustomPictureBox = new CustomPictureBox[yAxis, xAxis];
@@ -100,7 +105,7 @@ namespace GDC_Proyecto
                     CustomPictureBox[i, j].Width = pbWidth;
 
                     CustomPictureBox[i, j].Left = j * pbWidth;
-                    CustomPictureBox[i, j].Top = i * pbHeight;
+                    CustomPictureBox[i, j].Top = (i * pbHeight) + Scores.Height;
 
 
                     CustomPictureBox[i, j].BackgroundImage = Image.FromFile("../../Img/" + GenerateRandomNumber() + ".png");
@@ -135,34 +140,81 @@ namespace GDC_Proyecto
         private void ReboundBall()
         {
             if (ball.Bottom > Height)
+            {
+                Timer.Stop();
                 MessageBox.Show("Ha perdido...");
 
+                //Agregar puntaje a la Base de Datos
+                var dt = Connection_DataBase.ExecuteQuery($"SELECT player_id FROM players WHERE nickname = '{GameData.Nickname}'");
+                var dr = dt.Rows[0];
+                var player_id = Convert.ToInt32(dr[0].ToString());
+                Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
+                    $" VALUES({player_id}, {GameData.Puntaje})");
+
+                GameData.GameRestart();
+                onLose?.Invoke();
+            }
             if (ball.Left < 0 || ball.Right > Width)
             {
-                GameData.dirX = -GameData.dirY;
+                GameData.dirX = -GameData.dirX;
                 return;
             }
 
             if (ball.Bounds.IntersectsWith(PictureBox.Bounds))
-                GameData.dirY = -GameData.dirX;
+                GameData.dirY = -GameData.dirY;
 
             for (int i = 4; i >= 0; i--)
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    if (ball.Bounds.IntersectsWith(CustomPictureBox[i, j].Bounds))
+                    if (ball.Bounds.IntersectsWith(CustomPictureBox[i, j].Bounds) && Controls.Contains(CustomPictureBox[i,j]))
                     {
                         CustomPictureBox[i, j].golpes--;
 
                         if (CustomPictureBox[i, j].golpes == 0)
+                        {
                             Controls.Remove(CustomPictureBox[i, j]);
-
+                            GameData.LadrillosRotos++;
+                            GameData.Puntaje += (GameData.LadrillosRotos * 10) + 100;
+                            Score.Text = GameData.Puntaje.ToString();
+                        }
                         GameData.dirY = -GameData.dirY;
 
                         return;
                     }
                 }
             }
+        }
+
+        private void ScorePanel()
+        {
+            //Instanciar Panel
+            Scores = new Panel();
+
+            //Setear Attributos del Panel
+            Scores.Width = Width;
+            Scores.Height = (int)(Height * 0.05);
+            Scores.Top = 0;
+            Scores.Left = 0;
+            Scores.BackColor = Color.DarkBlue;
+
+            //Instanciar Label
+            Score = new Label();
+
+            //Setear atributos del label
+            Score.ForeColor = Color.White;
+            Score.Font = new Font("Microsoft YaHei", 24F);
+            Score.Text = GameData.Puntaje.ToString();
+            Score.TextAlign = ContentAlignment.MiddleCenter;
+            Score.Height = Scores.Height;
+            Score.Width = 100;
+            Score.Left = Width - 150;
+            Score.Top = Scores.Top;
+
+            //Agregar a Controls
+            Scores.Controls.Add(Score);
+            Controls.Add(Scores);
+
         }
     }
 }

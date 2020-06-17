@@ -16,12 +16,12 @@ namespace GDC_Proyecto
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            OnClickButton_Play(this, e);
+            OnClickButton_Play?.Invoke(this, e);
         }
 
         private void btnScores_Click(object sender, EventArgs e)
         {
-            OnClickButton_ViewScores(this, e);
+            OnClickButton_ViewScores?.Invoke(this, e);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

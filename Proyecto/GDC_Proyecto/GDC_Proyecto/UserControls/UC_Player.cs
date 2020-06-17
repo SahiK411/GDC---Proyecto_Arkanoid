@@ -18,7 +18,7 @@ namespace GDC_Proyecto
         private void btnOk_Click(object sender, EventArgs e)
         {
             RegisterPlayer();
-            OnClickButton_Ok(this, e);
+            OnClickButton_Ok?.Invoke(this, e);
         }
 
         private void RegisterPlayer()
@@ -28,6 +28,7 @@ namespace GDC_Proyecto
                 if (txtNickname.Text.Length >= 1)
                 {
                     PlayerDAO.VerifyPlayer(txtNickname.Text);
+                    GameData.Nickname = txtNickname.Text;
                     txtNickname.Clear();
                 }
                 else
