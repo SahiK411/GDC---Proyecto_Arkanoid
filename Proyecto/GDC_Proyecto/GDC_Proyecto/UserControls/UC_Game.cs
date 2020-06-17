@@ -97,9 +97,9 @@ namespace GDC_Proyecto
                     CustomPictureBox[i, j] = new CustomPictureBox();
 
                     if (i == 0)
-                        CustomPictureBox[i, j].golpes = 2;
+                        CustomPictureBox[i, j].Hits = 2;
                     else
-                        CustomPictureBox[i, j].golpes = 1;
+                        CustomPictureBox[i, j].Hits = 1;
 
                     CustomPictureBox[i, j].Height = pbHeight;
                     CustomPictureBox[i, j].Width = pbWidth;
@@ -149,7 +149,7 @@ namespace GDC_Proyecto
                 var dr = dt.Rows[0];
                 var player_id = Convert.ToInt32(dr[0].ToString());
                 Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
-                    $" VALUES({player_id}, {GameData.Puntaje})");
+                    $" VALUES({player_id}, {GameData.CurrentScore})");
 
                 GameData.GameRestart();
                 onLose?.Invoke();
@@ -169,14 +169,14 @@ namespace GDC_Proyecto
                 {
                     if (ball.Bounds.IntersectsWith(CustomPictureBox[i, j].Bounds) && Controls.Contains(CustomPictureBox[i,j]))
                     {
-                        CustomPictureBox[i, j].golpes--;
+                        CustomPictureBox[i, j].Hits--;
 
-                        if (CustomPictureBox[i, j].golpes == 0)
+                        if (CustomPictureBox[i, j].Hits == 0)
                         {
                             Controls.Remove(CustomPictureBox[i, j]);
-                            GameData.LadrillosRotos++;
-                            GameData.Puntaje += (GameData.LadrillosRotos * 10) + 100;
-                            Score.Text = GameData.Puntaje.ToString();
+                            GameData.BrokenBricks++;
+                            GameData.CurrentScore += (GameData.BrokenBricks * 10) + 100;
+                            Score.Text = GameData.CurrentScore.ToString();
                         }
                         GameData.dirY = -GameData.dirY;
 
@@ -204,7 +204,7 @@ namespace GDC_Proyecto
             //Setear atributos del label
             Score.ForeColor = Color.White;
             Score.Font = new Font("Microsoft YaHei", 24F);
-            Score.Text = GameData.Puntaje.ToString();
+            Score.Text = GameData.CurrentScore.ToString();
             Score.TextAlign = ContentAlignment.MiddleCenter;
             Score.Height = Scores.Height;
             Score.Width = 100;

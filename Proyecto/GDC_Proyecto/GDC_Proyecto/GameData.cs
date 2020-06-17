@@ -5,14 +5,14 @@
         public static string Nickname = "";
         public static bool GameStarted = false;
         public static int dirX = 7, dirY = -dirX;
-        public static int Puntaje = 0;
-        public static int LadrillosRotos = 0;
+        public static int CurrentScore = 0;
+        public static int BrokenBricks = 0;
 
         public static void GameRestart()
         {
             GameStarted = false;
-            Puntaje = 0;
-            LadrillosRotos = 0;
+            CurrentScore = 0;
+            BrokenBricks = 0;
             Nickname = "";
         }
     }

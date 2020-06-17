@@ -15,8 +15,8 @@
 
         public Player(int player_id, string nickname)
         {
-            this.Player_id = player_id;
-            this.Nickname = nickname;
+            Player_id = player_id;
+            Nickname = nickname;
         }
     }
 }
