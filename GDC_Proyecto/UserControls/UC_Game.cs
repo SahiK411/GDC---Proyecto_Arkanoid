@@ -10,8 +10,7 @@ namespace GDC_Proyecto
         private CustomPictureBox[,] CustomPictureBox;
         private Panel Scores;
         private Label Score;
-        private Panel Lives;
-        private Label Live;
+        private Label LiveCount;
         private PictureBox ball;
         public delegate void OnLose(object sender = null, EventArgs e = null);
         public OnLose onLose;
@@ -45,7 +44,6 @@ namespace GDC_Proyecto
             Controls.Add(ball);
 
             ScorePanel();
-            GameLives();
             LoadTiles();
             Timer.Start();
         }
@@ -100,9 +98,9 @@ namespace GDC_Proyecto
                     CustomPictureBox[i, j] = new CustomPictureBox();
 
                     if (i == 0)
-                        CustomPictureBox[i, j].golpes = 2;
+                        CustomPictureBox[i, j].Hits = 2;
                     else
-                        CustomPictureBox[i, j].golpes = 1;
+                        CustomPictureBox[i, j].Hits = 1;
 
                     CustomPictureBox[i, j].Height = pbHeight;
                     CustomPictureBox[i, j].Width = pbWidth;
@@ -145,24 +143,23 @@ namespace GDC_Proyecto
             if (ball.Bottom > Height)
             {
                 Timer.Stop();
-                Game_lives.GameLives();
-                MessageBox.Show("Ha perdido..." + "\nCuenta con " + Game_lives.lives + " vidas restantes");
-                if (Game_lives.lives == 0)
+                GameData.GameLives();
+                MessageBox.Show("Ha perdido..." + "\nCuenta con " + GameData.lives + " vidas restantes");
+                if (GameData.lives == 0)
                 {
                     MessageBox.Show("Ha perdido...\nFin de la partida");
+                    //Agregar puntaje a la Base de Datos
+                    var dt = Connection_DataBase.ExecuteQuery($"SELECT player_id FROM players WHERE nickname = '{GameData.Nickname}'");
+                    var dr = dt.Rows[0];
+                    var player_id = Convert.ToInt32(dr[0].ToString());
+                    Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
+                        $" VALUES({player_id}, {GameData.Score})");
+                    GameData.GameRestart();
+                    onLose?.Invoke();
                 }
+                LiveCount.Text = "Vidas: " + GameData.lives.ToString();
+                GameData.GameStarted = false;
                 RepositionElements();
-                               
-
-                //Agregar puntaje a la Base de Datos
-                var dt = Connection_DataBase.ExecuteQuery($"SELECT player_id FROM players WHERE nickname = '{GameData.Nickname}'");
-                var dr = dt.Rows[0];
-                var player_id = Convert.ToInt32(dr[0].ToString());
-                Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
-                    $" VALUES({player_id}, {GameData.Puntaje})");
-
-                GameData.GameRestart();
-                onLose?.Invoke();
             }
             if (ball.Left < 0 || ball.Right > Width)
             {
@@ -179,14 +176,14 @@ namespace GDC_Proyecto
                 {
                     if (ball.Bounds.IntersectsWith(CustomPictureBox[i, j].Bounds) && Controls.Contains(CustomPictureBox[i,j]))
                     {
-                        CustomPictureBox[i, j].golpes--;
+                        CustomPictureBox[i, j].Hits--;
 
-                        if (CustomPictureBox[i, j].golpes == 0)
+                        if (CustomPictureBox[i, j].Hits == 0)
                         {
                             Controls.Remove(CustomPictureBox[i, j]);
-                            GameData.LadrillosRotos++;
-                            GameData.Puntaje += (GameData.LadrillosRotos * 10) + 100;
-                            Score.Text = GameData.Puntaje.ToString();
+                            GameData.BrokenBricks++;
+                            GameData.Score += (GameData.BrokenBricks * 10) + 100;
+                            Score.Text = GameData.Score.ToString();
                         }
                         GameData.dirY = -GameData.dirY;
 
@@ -214,39 +211,29 @@ namespace GDC_Proyecto
             //Setear atributos del label
             Score.ForeColor = Color.White;
             Score.Font = new Font("Microsoft YaHei", 24F);
-            Score.Text = GameData.Puntaje.ToString();
+            Score.Text = GameData.Score.ToString();
             Score.TextAlign = ContentAlignment.MiddleCenter;
             Score.Height = Scores.Height;
             Score.Width = 100;
             Score.Left = Width - 150;
             Score.Top = Scores.Top;
 
+            //Segundo Label
+            LiveCount = new Label();
+
+            LiveCount.ForeColor = Color.White;
+            LiveCount.Font = new Font("Microsoft YaHei", 20F);
+            LiveCount.Text = "Vidas: " + GameData.lives.ToString();
+            LiveCount.TextAlign = ContentAlignment.MiddleCenter;
+            LiveCount.Height = Scores.Height;
+            LiveCount.Width = 200;
+            LiveCount.Left = 10;
+            LiveCount.Top = Scores.Top;
+
             //Agregar a Controls
+            Scores.Controls.Add(LiveCount);
             Scores.Controls.Add(Score);
             Controls.Add(Scores);
-
-        }
-
-        private void GameLives()
-        {
-            Lives = new Panel();
-
-            Lives.Width = Width;
-            Lives.Height = (int)(Height * 0.05);
-            Lives.Top = 5;
-            Lives.Left = 0;
-            Lives.BackColor = Color.Transparent;
-
-            Live = new Label();
-
-            Live.ForeColor = Color.Gray;
-            Live.Font = new Font("Microsoft YaHei", 20F);
-            Live.Text = Game_lives.lives.ToString();
-            Live.TextAlign = ContentAlignment.MiddleLeft;
-            Live.Height = Lives.Height;
-            Live.Width = 25;
-            Live.Left = Width - 50;
-            Live.Top = Lives.Top;
 
         }
 

@@ -82,7 +82,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GameData.cs" />
-    <Compile Include="Game_lives.cs" />
     <Compile Include="InvalidLengthException.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
