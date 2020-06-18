@@ -36,6 +36,15 @@ namespace GDC_Proyecto
             tableLayoutPanel1.Controls.Add(Menu, 0, 0);
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
         private void MainForm_BackgroundImageChanged(object sender, EventArgs e)
         {
             throw new NotImplementedException();
