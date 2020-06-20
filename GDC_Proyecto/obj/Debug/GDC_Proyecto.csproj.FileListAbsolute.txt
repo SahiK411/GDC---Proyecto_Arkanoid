@@ -140,3 +140,39 @@ D:\Programming\Chapter 3\Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Player.
 D:\Programming\Chapter 3\Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Top10Scores.resources
 D:\Programming\Chapter 3\Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.GenerateResource.cache
 D:\Programming\Chapter 3\Proyecto\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CopyComplete
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.csprojAssemblyReference.cache
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.MainForm.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.Properties.Resources.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Game.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Menu.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Player.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Top10Scores.resources
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.GenerateResource.cache
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.exe
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.pdb
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\GDC_Proyecto.exe.config
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\GDC_Proyecto.exe
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\GDC_Proyecto.pdb
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\Npgsql.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Buffers.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Memory.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Text.Json.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.ValueTuple.dll
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\Npgsql.pdb
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\Npgsql.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Buffers.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Memory.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Text.Json.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.ValueTuple.xml
+C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CopyComplete

@@ -124,14 +124,22 @@ namespace GDC_Proyecto
         }
 
         // Evento que pregunta al Usuario si desea salir de la aplicacion
-        /*private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("¿Seguro que desea salir del juego?",
-                "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            try
             {
-                Application.Exit();
+                if (MessageBox.Show("¿Seguro que desea salir del juego?",
+                    "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    Application.Exit();
+                    throw new InvalidExitGameException("Puede perder sus datos");
+                }
             }
-        }*/
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e){}
     }

@@ -51,15 +51,55 @@ namespace GDC_Proyecto
         // Metodos para iniciar el juego
         private void UC_Game_KeyPress(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Space)
-                GameData.GameStarted = true;
+            try
+            {
+                if (e.KeyCode == Keys.Space)
+                    GameData.GameStarted = true;
+                else
+                {
+                    GameData.GameStarted = false;
+                    throw new InvalidKeyException("Presione Click izquierdo o tecla Espacio para jugar");
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is InvalidKeyException)
+                {
+                    MessageBox.Show(ex.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error...",
+                        "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
 
         }
 
         private void UC_Game_OnClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-                GameData.GameStarted = true;
+            try
+            {
+                if (e.Button == MouseButtons.Left)
+                    GameData.GameStarted = true;
+                else
+                {
+                    GameData.GameStarted = false;
+                    throw new InvalidKeyException("Presione Click izquierdo o tecla Espacio para jugar");
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is InvalidKeyException)
+                {
+                    MessageBox.Show(ex.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error...",
+                        "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         // Metodo para el movimiento de la nave con el mouse
@@ -160,6 +200,7 @@ namespace GDC_Proyecto
                 LiveCount.Text = "Vidas: " + GameData.lives.ToString();
                 GameData.GameStarted = false;
                 RepositionElements();
+                Timer.Start();
             }
             if (ball.Left < 0 || ball.Right > Width)
             {

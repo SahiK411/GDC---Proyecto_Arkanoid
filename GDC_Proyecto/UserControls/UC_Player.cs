@@ -27,9 +27,14 @@ namespace GDC_Proyecto
             {
                 if (txtNickname.Text.Length >= 1)
                 {
-                    PlayerDAO.VerifyPlayer(txtNickname.Text);
-                    GameData.Nickname = txtNickname.Text;
-                    txtNickname.Clear();
+                    if (txtNickname.Text.Length <= 15)
+                    {
+                        PlayerDAO.VerifyPlayer(txtNickname.Text);
+                        GameData.Nickname = txtNickname.Text;
+                        txtNickname.Clear();
+                    }
+                    else
+                        throw new InvalidLengthException("Nombre de usuario excede tamaño establecido");
                 }
                 else
                     throw new InvalidLengthException("No se pueden dejar espacios en blanco");
@@ -37,6 +42,10 @@ namespace GDC_Proyecto
             catch (Exception e)
             {
                 if(e is InvalidLengthException)
+                {
+                    MessageBox.Show(e.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(e is InvalidSymbolsException)
                 {
                     MessageBox.Show(e.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

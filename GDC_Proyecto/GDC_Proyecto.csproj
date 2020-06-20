@@ -82,7 +82,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GameData.cs" />
+    <Compile Include="InvalidExitGameException.cs" />
+    <Compile Include="InvalidKeyException.cs" />
     <Compile Include="InvalidLengthException.cs" />
+    <Compile Include="InvalidSymbolsException.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
