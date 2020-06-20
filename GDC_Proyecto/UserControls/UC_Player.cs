@@ -17,11 +17,25 @@ namespace GDC_Proyecto
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            RegisterPlayer();
-            OnClickButton_Ok?.Invoke(this, e);
+            try
+            {
+                RegisterPlayer(e);
+            }
+            catch (Exception ex)
+            {
+                if (ex is InvalidLengthException || ex is InvalidSymbolsException)
+                {
+                    MessageBox.Show(ex.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error...",
+                        "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
-        private void RegisterPlayer()
+        private void RegisterPlayer(EventArgs e)
         {
             try
             {
@@ -29,9 +43,18 @@ namespace GDC_Proyecto
                 {
                     if (txtNickname.Text.Length <= 15)
                     {
-                        PlayerDAO.VerifyPlayer(txtNickname.Text);
-                        GameData.Nickname = txtNickname.Text;
-                        txtNickname.Clear();
+                        if (!txtNickname.Text.Contains("#") && !txtNickname.Text.Contains("&") &&
+                            !txtNickname.Text.Contains(";"))
+                        {
+                            PlayerDAO.VerifyPlayer(txtNickname.Text);
+                            GameData.Nickname = txtNickname.Text;
+                            txtNickname.Clear();
+                            OnClickButton_Ok?.Invoke(this, e);
+                        }
+                        else
+                        {
+                            throw new InvalidSymbolsException("Nombre de Usuario contiene caracteres invalidos.");
+                        }
                     }
                     else
                         throw new InvalidLengthException("Nombre de usuario excede tamaño establecido");
@@ -39,15 +62,11 @@ namespace GDC_Proyecto
                 else
                     throw new InvalidLengthException("No se pueden dejar espacios en blanco");
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                if(e is InvalidLengthException)
+                if (ex is InvalidLengthException || ex is InvalidSymbolsException)
                 {
-                    MessageBox.Show(e.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if(e is InvalidSymbolsException)
-                {
-                    MessageBox.Show(e.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "Arkanoid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
