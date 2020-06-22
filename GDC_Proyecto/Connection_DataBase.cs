@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using Npgsql;
 
 namespace GDC_Proyecto
@@ -16,29 +17,43 @@ namespace GDC_Proyecto
 
         public static DataTable ExecuteQuery(string query)
         {
-            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
-            DataSet ds = new DataSet();
+            try
+            {
+                NpgsqlConnection connection = new NpgsqlConnection(sConnection);
+                DataSet ds = new DataSet();
 
-            connection.Open();
+                connection.Open();
 
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, connection);
-            da.Fill(ds);
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, connection);
+                da.Fill(ds);
 
-            connection.Close();
+                connection.Close();
 
-            return ds.Tables[0];
+                return ds.Tables[0];
+            }
+            catch (Exception)
+            {
+                throw new UnableToConnectException("Error de Conexion.");
+            }
         }
 
         public static void ExecuteNonQuery(string act)
         {
-            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
+            try
+            {
+                NpgsqlConnection connection = new NpgsqlConnection(sConnection);
 
-            connection.Open();
+                connection.Open();
 
-            NpgsqlCommand command = new NpgsqlCommand(act, connection);
-            command.ExecuteNonQuery();
+                NpgsqlCommand command = new NpgsqlCommand(act, connection);
+                command.ExecuteNonQuery();
 
-            connection.Close();
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                throw new UnableToConnectException("Error de Conexion.");
+            }
         }
     }
 }
