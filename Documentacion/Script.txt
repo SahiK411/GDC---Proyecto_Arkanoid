@@ -1,0 +1,14 @@
+CREATE TABLE players(
+  player_id SERIAL NOT NULL,
+  nickname VARCHAR(100) UNIQUE
+  CONSTRAINT PK_Players PRIMARY KEY (player_id)
+);
+
+CREATE TABLE scores(
+  score_id SERIAL NOT NULL,
+  score INT,
+  player_id INT,
+  CONSTRAINT PK_Scores PRIMARY KEY (score_id),
+  CONSTRAINT FK_scores_players
+    FOREIGN KEY (player_id) REFERENCES players(player_id)
+);
