@@ -176,3 +176,38 @@ C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Tex
 C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\bin\Debug\System.ValueTuple.xml
 C:\Users\chris\Desktop\GDC---Proyecto_Arkanoid\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CopyComplete
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\GDC_Proyecto.exe.config
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\GDC_Proyecto.exe
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\GDC_Proyecto.pdb
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Buffers.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Memory.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\Npgsql.pdb
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\Npgsql.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Numerics.Vectors.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Text.Encodings.Web.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Text.Json.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.ValueTuple.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.csprojAssemblyReference.cache
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.MainForm.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.Properties.Resources.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Game.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Menu.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Player.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.UC_Top10Scores.resources
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.GenerateResource.cache
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.csproj.CopyComplete
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.exe
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\obj\Debug\GDC_Proyecto.pdb
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\Npgsql.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Numerics.Vectors.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Text.Encodings.Web.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Text.Json.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.ValueTuple.dll
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Buffers.xml
+D:\Programming\Chapter 3\Proyecto\SourceCode\GDC_Proyecto\bin\Debug\System.Memory.xml

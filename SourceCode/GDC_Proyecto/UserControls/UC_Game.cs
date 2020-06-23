@@ -190,10 +190,13 @@ namespace GDC_Proyecto
                     MessageBox.Show("Ha perdido...\nFin de la partida");
                     //Agregar puntaje a la Base de Datos
                     var dt = Connection_DataBase.ExecuteQuery($"SELECT player_id FROM players WHERE nickname = '{GameData.Nickname}'");
-                    var dr = dt.Rows[0];
-                    var player_id = Convert.ToInt32(dr[0].ToString());
-                    Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
-                        $" VALUES({player_id}, {GameData.Score})");
+                    if(!dt.ExtendedProperties.Values.Count.Equals(0) && !dt.Rows.Count.Equals(0))
+                    {
+                        var dr = dt.Rows[0];
+                        var player_id = Convert.ToInt32(dr[0].ToString());
+                        Connection_DataBase.ExecuteNonQuery($"INSERT INTO scores(player_id, score)" +
+                            $" VALUES({player_id}, {GameData.Score})");
+                    }
                     GameData.GameRestart();
                     onLose?.Invoke();
                 }
