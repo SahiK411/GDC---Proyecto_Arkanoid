@@ -19,3 +19,6 @@
 > Es posible jugar el juego sin tener un usuario registrado. Simplemente escribe un nombre que no exista, y dale click a la opcion "No" en el cuadro resultante. Cabe mencionar que es posible que se creen otros mensajes a partir de esta accion, pero no impactaran tu partida.
 - Cuando se guarda mi puntaje?
 > Tu puntaje solo se guarda cuando termina la partida, y tienes una conexion a internet. En caso de que no la tengas, o cuando cierres el programa sin terminar tu partida, no se guardara para motivos del Top 10
+
+## Trello
+https://trello.com/b/KyK5xAlD/gdc-proyectoarkanoid
