@@ -76,6 +76,7 @@ namespace GDC_Proyecto
 
         }
 
+        // Metodo que inicia el juego
         private void UC_Game_OnClick(object sender, MouseEventArgs e)
         {
             try
@@ -120,7 +121,7 @@ namespace GDC_Proyecto
             }
         }
 
-        // Metodo que agergara los bloques
+        // Metodo que agrega los bloques
         private void LoadTiles()
         {
             int xAxis = 10;
@@ -158,7 +159,7 @@ namespace GDC_Proyecto
                 }
             }
         }
-        
+
         // Metodo que genera un numero random para las imagenes de los bloques
         private int GenerateRandomNumber()
         {
@@ -185,6 +186,7 @@ namespace GDC_Proyecto
                 Timer.Stop();
                 GameData.GameLives();
                 MessageBox.Show("Ha perdido..." + "\nCuenta con " + GameData.lives + " vidas restantes");
+
                 if (GameData.lives == 0)
                 {
                     MessageBox.Show("Ha perdido...\nFin de la partida");
@@ -200,11 +202,13 @@ namespace GDC_Proyecto
                     GameData.GameRestart();
                     onLose?.Invoke();
                 }
+
                 LiveCount.Text = "Vidas: " + GameData.lives.ToString();
                 GameData.GameStarted = false;
                 RepositionElements();
                 Timer.Start();
             }
+            
             if (ball.Left < 0 || ball.Right > Width)
             {
                 GameData.dirX = -GameData.dirX;

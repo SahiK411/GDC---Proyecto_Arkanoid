@@ -11,14 +11,15 @@ namespace GDC_Proyecto
         {
             try
             {
+                // Query para insertar un jugador
                 string NonQuery = $"INSERT INTO players(nickname) VALUES('{nickname}');";
 
                 Connection_DataBase.ExecuteNonQuery(NonQuery);
 
-                MessageBox.Show("¡Jugador registrado exitosamente!",
+                MessageBox.Show("ï¿½Jugador registrado exitosamente!",
                             "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show("¡Siga adelante!",
+                MessageBox.Show("ï¿½Siga adelante!",
                         "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception e)
@@ -33,13 +34,15 @@ namespace GDC_Proyecto
                         "ARKANOID", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
+
         }
 
+        // Metodo que verifica si un jugador ya existe o no
         public static void VerifyPlayer(string nickname)
         {
             try
             {
+                // Query que verifica si ya existe o no un usuario
                 string queryUser = $"SELECT count(*) FROM players WHERE nickname = '{nickname}'";
 
                 var dt = Connection_DataBase.ExecuteQuery(queryUser);
@@ -50,13 +53,13 @@ namespace GDC_Proyecto
                 {
                     try
                     {
-                        if (MessageBox.Show("Parece que este usuario no esta registrado.\n¿Desea registar un nuevo usuario?",
+                        if (MessageBox.Show("Parece que este usuario no esta registrado.\nï¿½Desea registar un nuevo usuario?",
                             "ARKANOID", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             AddPlayer(nickname);
                         }
                         else
-                            MessageBox.Show("No se guardara un registro de la partida a realizar.", "ARKANOID", 
+                            MessageBox.Show("No se guardara un registro de la partida a realizar.", "ARKANOID",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     catch (Exception)

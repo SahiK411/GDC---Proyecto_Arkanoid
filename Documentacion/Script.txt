@@ -12,3 +12,15 @@ CREATE TABLE scores(
   CONSTRAINT FK_scores_players
     FOREIGN KEY (player_id) REFERENCES players(player_id)
 );
+
+/* Paara ver el Top10 */
+SELECT player_id FROM scores ORDER BY score DESC
+SELECT score FROM scores ORDER BY score DESC
+
+/* Insertando un usuario */
+INSERT INTO players (nickaname)
+VALUES 'Usuario1'
+
+/* Insertando un score */
+INSERT INTO scores (player_id, score)
+VALUES 1, 1;

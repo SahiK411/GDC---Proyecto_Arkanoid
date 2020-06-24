@@ -26,13 +26,14 @@ namespace GDC_Proyecto
         {
             var dt = Connection_DataBase.ExecuteQuery("SELECT player_id FROM scores ORDER BY score DESC");
             var st = Connection_DataBase.ExecuteQuery("SELECT score FROM scores ORDER BY score DESC");
+
             if(dt.Rows.Count > 0)
             {
                 if(dt.Rows.Count < 10)
                 {
                     for(int i = 0; i < dt.Rows.Count; i++)
                     {
-                        //Adding Nicknames to the UserControl
+                        // Agregando nicknames al UserControl
                         var dr = dt.Rows[i];
                         var player_id = dr[0];
                         var tempDT = Connection_DataBase.ExecuteQuery($"SELECT nickname FROM players " +
@@ -47,10 +48,10 @@ namespace GDC_Proyecto
                         Top10[i, 0].Dock = DockStyle.Fill;
                         tableLayoutPanel1.Controls.Add(Top10[i, 0],2, i+2);
 
-                        //Adding Scores to the UserControl
+                        // Agregando scores al UserControl
                         dr = st.Rows[i];
                         var shownScore = dr[0].ToString();
-                        
+
                         Top10[i, 1] = new Label();
                         Top10[i, 1].Text = shownScore;
                         Top10[i, 1].Font = new Font("Microsoft YaHei", 20F);
@@ -58,9 +59,10 @@ namespace GDC_Proyecto
                         Top10[i, 1].Dock = DockStyle.Fill;
                         tableLayoutPanel1.Controls.Add(Top10[i, 1], 4, i + 2);
                     }
+
                     for(int i = dt.Rows.Count; i < 10; i++)
                     {
-                        //Filling out unused spaces
+                        // Llenando espacios que no se esten ocupando
                         Top10[i, 0] = new Label();
                         Top10[i, 0].Text = "-----";
                         Top10[i, 0].Font = new Font("Microsoft YaHei", 16F);
@@ -76,11 +78,12 @@ namespace GDC_Proyecto
                         tableLayoutPanel1.Controls.Add(Top10[i, 1], 4, i + 2);
                     }
                 }
+
                 else
                 {
                     for (int i = 0; i < 10; i++)
                     {
-                        //Adding Nicknames to User Control
+                        // Agregando nicknames al UserControl
                         var dr = dt.Rows[i];
                         var player_id = dr[0];
                         var tempDT = Connection_DataBase.ExecuteQuery($"SELECT nickname FROM players " +
@@ -95,7 +98,7 @@ namespace GDC_Proyecto
                         Top10[i, 0].Dock = DockStyle.Fill;
                         tableLayoutPanel1.Controls.Add(Top10[i, 0], 2, i + 2);
 
-                        //Adding Scores to User Control
+                        // Agregando scores al UserControl
                         dr = st.Rows[i];
                         var shownScore = dr[0].ToString();
 
@@ -108,6 +111,7 @@ namespace GDC_Proyecto
                     }
                 }
             }
+
             else
             {
                 for (int i = 0; i < 10; i++)
